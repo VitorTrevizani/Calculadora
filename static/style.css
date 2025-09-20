@@ -1,0 +1,34 @@
+div#corpo{
+    background-color: aqua;
+    margin-top: 30px;
+    margin-right: 70vh;
+    margin-left: 70vh;
+    border-radius: 20px;
+    padding: 0.5%;
+   
+}
+
+div#tela{
+    background-color: brown;
+    padding:25px;
+    border-radius: 10px;
+    margin-bottom: 0.5%;
+
+    
+}
+
+table{
+    width: 100%;
+
+}
+
+
+button{
+    height: 100%;
+    width: 100%;
+}
+    
+
+
+    
+    
