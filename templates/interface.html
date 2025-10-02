@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href='../static/style.css'">
     <title>Calculadora</title>
 </head>
 <body>
@@ -13,33 +14,32 @@
        <table>
           <form action="/form" method="post">
             <tr>
-                <td><button type="submit" name="botao" value="%">%</button></td>
-                <td><button type="submit" name="botao" value="x2">X<sup>2</sup></button></td>
-                <td><button type="submit" name="botao" value="raiz"><sup>2</sup>raiz</button></td>
+                
+                <td><button type="submit" name="botao" value="**">X<sup>2</sup></button></td>
                 <td><button type="submit" name="botao" value="/">/</button></td>
             </tr>
             <tr>
-                <td><button type="submit" name="botao" value="1">1</button></td>
-                <td><button type="submit" name="botao" value="2">2</button></td>
-                <td><button type="submit" name="botao" value="3">3</button></td>
-                <td><button type="submit" name="botao" value="x">x</button></td>
+                <td><button type="submit" name="botao" value='1'>1</button></td>
+                <td><button type="submit" name="botao" value='2'>2</button></td>
+                <td><button type="submit" name="botao" value='3'>3</button></td>
+                <td><button type="submit" name="botao" value="*">x</button></td>
             </tr>
             <tr>
-                <td><button type="submit" name="botao" value="4">4</button></td>
-                <td><button type="submit" name="botao" value="5">5</button></td>
-                <td><button type="submit" name="botao" value="6">6</button></td>
+                <td><button type="submit" name="botao" value='4'>4</button></td>
+                <td><button type="submit" name="botao" value='5'>5</button></td>
+                <td><button type="submit" name="botao" value='6'>6</button></td>
                 <td><button type="submit" name="botao" value="-">-</button></td>
             </tr>
             <tr>
-                <td><button type="submit" name="botao" value="7">7</button></td>
-                <td><button type="submit" name="botao" value="8">8</button></td>
-                <td><button type="submit" name="botao" value="9">9</button></td>
+                <td><button type="submit" name="botao" value='7'>7</button></td>
+                <td><button type="submit" name="botao" value='8'>8</button></td>
+                <td><button type="submit" name="botao" value='9'>9</button></td>
                 <td><button type="submit" name="botao" value="+">+</button></td>
             </tr>
             <tr>
                 <td><button type="submit" name="botao" value="<[x]"><[X]</button></td>
-                <td><button type="submit" name="botao" value="0">0</button></td>
-                <td><button type="submit" name="botao" value=",">,</button></td>
+                <td><button type="submit" name="botao" value='0'>0</button></td>
+                <td><button type="submit" name="botao" value=".">,</button></td>
                 <td><button type="submit" name="botao" value="=">=</button></td>
             </tr>
           </form>
