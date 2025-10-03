@@ -20,7 +20,7 @@ div#corpo{
 
 div#tela{
     background-color: brown;
-    padding:25px;
+    padding:10px;
     border-radius: 10px;
     margin-bottom: 4%;
     box-shadow: inset 0px 0px 20px 0px black;
@@ -47,6 +47,10 @@ button:hover{
 }
     
 
-
+p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
     
     

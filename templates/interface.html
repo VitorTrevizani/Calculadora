@@ -10,7 +10,13 @@
 <body>
 
     <div id="corpo">
-       <div id="tela"></div> 
+       <div id="tela">
+            {% if res != 'none' %}
+                <p>{{res}}</p>
+            {% else %}
+                <p>{{exp}}</p>
+            {% endif %}
+       </div> 
        <table>
           <form action="/form" method="post">
             <tr>
