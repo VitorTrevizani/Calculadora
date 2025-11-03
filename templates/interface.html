@@ -11,10 +11,14 @@
 
     <div id="corpo">
        <div id="tela">
-            {% if res != 'none' %}
-                <p>{{res}}</p>
+            {% if not res and not exp %}
+                <p> 0  0  0   0   0   0   0   0   0   0 </p>
             {% else %}
-                <p>{{exp}}</p>
+                {% if res != 'none' %}
+                    <p>{{res}}</p>
+                {% else %}
+                    <p>{{exp}}</p>
+                {% endif %}
             {% endif %}
        </div> 
        <table>
@@ -22,7 +26,11 @@
             <tr>
                 
                 <td><button type="submit" name="botao" value="**">X<sup>2</sup></button></td>
+                <td><button type="submit" name="botao" value="(">(</button></td>
+                <td><button type="submit" name="botao" value=")">)</button></td>
                 <td><button type="submit" name="botao" value="/">/</button></td>
+                
+              
             </tr>
             <tr>
                 <td><button type="submit" name="botao" value='1'>1</button></td>

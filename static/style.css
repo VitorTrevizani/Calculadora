@@ -1,11 +1,21 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "calculadora";
+    src: url("../fonts/Calculator.ttf") format("truetype");
+}
+
+
 body{
-    background-image: url(_image_two.png);
+    background-image: url("_image_two.png");
     background-color: gray;
+    width: 100vw;
+    height: 100vh;
 }
 
 
 div#corpo{
-    background-color: lightblue;
+    background-color: #202124;
     margin-top: 15%;
     margin-right: 35%;
     margin-left: 35%;
@@ -15,11 +25,13 @@ div#corpo{
     box-shadow: 0px 0px 3px 0px black;
     
 
+    
+
    
 }
 
 div#tela{
-    background-color: brown;
+    background-color: #59634E;
     padding:10px;
     border-radius: 10px;
     margin-bottom: 4%;
@@ -31,6 +43,7 @@ div#tela{
 
 table{
     width: 100%;
+    
 }
 
 
@@ -51,6 +64,7 @@ p{
     color: white;
     font-size: 20px;
     text-align: center;
+    font-family: "calculadora", verdana, sans-serif;
 }
     
     

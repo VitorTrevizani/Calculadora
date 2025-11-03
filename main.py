@@ -4,10 +4,12 @@ app = Flask(__name__)
 app.secret_key = 'siiiiiuuu'
 
 
+
 @app.route('/')
 def index():
    if "expressao" not in session:
       session["expressao"] = ""
+     
    if "resultado" not in session:
       session["resultado"] = ""
 
@@ -23,12 +25,18 @@ def form():
        session["resultado"] = resul        #joga na sessão pra renderizar na pagina
        session["expressao"] = ''  
        botao = ''         #limpa a expressão atual
+   elif botao == "<[x]":
+         session["expressao"] = session["expressao"][:-1]
+         
    else:
       session["resultado"] = "none"  
        
-
-   session["expressao"] += botao
+   if botao != '<[x]':
+     session["expressao"] += botao
+   
    print(session["expressao"])
+   print(session["resultado"])
+
    return redirect(url_for('index'))
 
 if __name__ == "__main__":
